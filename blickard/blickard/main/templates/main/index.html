@@ -1,0 +1,117 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <div class="ofer">
+        <h1 class="h1_ofer">Ищете идеальное решение для охлаждения вашего ПК?<br> Мы предлагаем индивидуальные системы охлаждения, которые обеспечат максимальную производительность и минимальный уровень шума!</h1>
+        <div class="prem">🔧 Наши преимущества:</div>
+        <ul class="ul_ofer">
+            <li class="ul_ofer">
+                Индивидуальный подход: Мы создаем системы охлаждения, <br>адаптированные под ваши уникальные требования и конфигурации.
+            </li class="ul_ofer">
+            <li class="ul_ofer">
+                Эффективность: Устойчивые температуры даже при максимальных <br>нагрузках, что продлевает срок службы вашего оборудования.
+            </li>
+            <li class="ul_ofer">
+                Гарантия и поддержка: Мы предоставляем гарантию на все наши <br>системы и готовы помочь вам с установкой и настройкой.
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="popular_models">
+        <h1 style="color: rgb(255, 235, 235 );margin-bottom: 30px;">Популярные модели</h1>
+        <div class="popular_models1">
+            <a href="#" class="cart">
+                <img class="img-cart" src="{% static 'main/img/r400.jpg' %}" alt="">
+                <h2 class="h2-cart">R400 ARGB BK</h2>
+            </a>
+            <a href="#" class="cart">
+                <img class="img-cart" src="{% static 'main/img/K4WH.jpg' %}" alt="">
+                <h2 class="h2-cart">K4 WH</h2>
+            </a>
+            <a href="#" class="cart">
+                <img class="img-cart" src="{% static 'main/img/GI-CX240.jpg' %}" alt="">
+                <h2 class="h2-cart">GI-CX240 ARGB</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="coolers"><a name="cooler"></a>
+        <h1 style="color: rgb(255, 235, 235 );margin-bottom: 30px;">Кулеры</h1>
+        <div class="popular_models1">
+            <a href="#" class="cart">
+                <img class="img-cart" src="{% static 'main/img/r400.jpg' %}" alt="">
+                <h2 class="h2-cart">R400 ARGB BK</h2>
+            </a>
+            <a href="#" class="cart">
+                <img class="img-cart" src="{% static 'main/img/K4WH.jpg' %}" alt="">
+                <h2 class="h2-cart">K4 WH</h2>
+            </a>
+            <a href="#" class="cart">
+                <img class="img-cart" src="{% static 'main/img/RZ620.jpg' %}" alt="">
+                <h2 class="h2-cart">RZ620 BK</h2>
+            </a>
+        </div>
+        <a class="cooler-but" href="{% url 'product_home' %}">Смотреть ещё</a>
+    </div>
+
+    <div class="popular_models"><a name="water-cooler"></a>
+        <h1 style="color: rgb(255, 235, 235 );margin-bottom: 30px;">Водяное охлаждение</h1>
+        <div class="popular_models1">
+            <a href="#" class="cart">
+                <img class="img-cart" style="background-color: white;" src="{% static 'main/img/CL120.png' %}" alt="">
+                <h2 class="h2-cart">GI-CL120 Pro</h2>
+            </a>
+            <a href="#" class="cart">
+                <img class="img-cart" src="{% static 'main/img/GI-CX240.jpg' %}" alt="">
+                <h2 class="h2-cart">GI-CX240 ARGB</h2>
+            </a>
+            <a href="#" class="cart">
+                <img class="img-cart" src="{% static 'main/img/CX360.jpg' %}" alt="">
+                <h2 class="h2-cart">GI-CX360 ARGB</h2>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="review"><a name="obzor"></a>
+        <h1 style="color: rgb(255, 235, 235 );margin-bottom: 30px;" >Обзоры на кулеры</h1>
+        <div class="popular_models1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iHDu0aLQO1U?si=vC5doeJFq2CbEeN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SNx0ckEIULM?si=2fJ4_pf46rjj5YY_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="shops"><a name="magaz"></a>
+        <h1 style="color: rgb(255, 235, 235 );margin-bottom: 30px;" >Магазины, где можно приобрести продукцию бликард</h1>
+        <div class="popular_models1">
+            <div class="shops_carts">
+                <img class="img_shop" src="{% static 'main/img/dns.jpg' %}" alt="">
+                <div class="op_shop"> DNS</div>
+            </div>
+            <div class="shops_carts">
+                <img class="img_shop" src="{% static 'main/img/hyperpc.jpg' %}" alt="">
+                <div class="op_shop"> HYPER PC (Сборка ПК)</div>
+            </div>
+            <div class="shops_carts">
+                <img class="img_shop" src="{% static 'main/img/pulser.jpg' %}" alt="">
+                <div class="op_shop"> Pulser (Казахстан)</div>
+            </div>
+            <div class="shops_carts">
+                <img class="img_shop" src="{% static 'main/img/xcom.jpg' %}" alt="">
+                <div class="op_shop"> Xcom</div>
+            </div>
+            <div class="shops_carts">
+                <img class="img_shop" src="{% static 'main/img/onlain.jpg' %}" alt="">
+                <div class="op_shop"> Онлайнтрейд</div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

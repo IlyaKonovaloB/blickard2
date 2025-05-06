@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="popular_models" style="width: 70%;margin:100px 15% ;">
+    <h1 style="color: rgb(255, 235, 235 );margin-bottom: 30px;">Кулеры</h1>
+        <div class="popular_models1">
+        {% for el in product %}
+            <div class="cart">
+                <img class="img-cart" src="{{ el.image.url }}" alt="">
+                <h2 class="h2-cart"> {{ el.title }} </h2>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock %}
